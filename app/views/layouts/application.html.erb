@@ -7,9 +7,20 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
   </head>
 
   <body>
+    <div class="navbar">
+      <a href="http://localhost:3000/articles">
+        <img src="https://static1.squarespace.com/static/579fd5d06b8f5bcfaa0c6636/t/57b2686b5016e16882a7333c/1471309938595/" class="brand">
+      </a>
+      <div class="navbar-actions d-none d-sm-flex">
+        <a href="http://localhost:3000/articles/new" class="navbar-lewagon-link">New Article</a>
+      </div>
+    </div>
+
     <%= yield %>
   </body>
 </html>

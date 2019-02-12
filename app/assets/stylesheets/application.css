@@ -1,15 +1,74 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
+body{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none ;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+#submit-btn {
+  margin-top: 10px;
+}
+
+.btn {
+  color: white;
+  text-decoration: none ;
+}
+
+.form-label {
+  margin-top: 10px;
+}
+
+.articles {
+  text-align: center;
+}
+
+.article h2{
+  color: #337ab7;
+  font-size: 30px;
+}
+
+.article p{
+  font-weight: lighter;
+}
+
+.navbar-lewagon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 16px 24px;
+}
+
+.navbar .brand {
+  width: 40px;
+}
+
+.navbar .navbar-lewagon-actions {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-actions .navbar-link {
+  margin-left: 24px;
+  color: #999999;
+}
+.navbar .navbar-actions .navbar-link:hover {
+  color: #151515;
+}
+
+
+.navbar .navbar-actions .avatar {
+  margin-left: 24px;
+}
+
+.navbar .dropdown-toggle {
+  cursor: pointer;
+}
